@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\AndroidProjects\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\transition\\detail_exit.xml",
+        "source": "D:\\AndroidProjects\\xyzreader\\XYZReader\\src\\main\\res\\transition\\detail_exit.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\transition\\detail_enter.xml",
+        "source": "D:\\AndroidProjects\\xyzreader\\XYZReader\\src\\main\\res\\transition\\detail_enter.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\transition\\grid_exit.xml",
+        "source": "D:\\AndroidProjects\\xyzreader\\XYZReader\\src\\main\\res\\transition\\grid_exit.xml"
+    }
+]
