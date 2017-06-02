@@ -18,6 +18,7 @@ import android.text.Html;
 import android.text.format.DateUtils;
 import android.text.method.LinkMovementMethod;
 import android.transition.Slide;
+import android.transition.Transition;
 import android.transition.TransitionInflater;
 import android.util.Log;
 import android.view.Gravity;
@@ -86,6 +87,11 @@ public class ArticleDetailFragment extends Fragment implements
         mStatusBarFullOpacityBottom = getResources().getDimensionPixelSize(
                 R.dimen.detail_card_top_margin);
         setHasOptionsMenu(true);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getActivity().getWindow().setEnterTransition(TransitionInflater.from(getActivity()).inflateTransition(R.transition.detail_exit));
+            Transition exitTransition = TransitionInflater.from(getActivity()).inflateTransition(R.transition.detail_exit);
+            getActivity().getWindow().setReturnTransition(exitTransition);
+        }
     }
 
     public ArticleDetailActivity getActivityCast() {
@@ -108,6 +114,7 @@ public class ArticleDetailFragment extends Fragment implements
             Bundle savedInstanceState) {
 
         mRootView = inflater.inflate(R.layout.fragment_article_detail, container, false);
+
         mDrawInsetsFrameLayout = (DrawInsetsFrameLayout)
                 mRootView.findViewById(R.id.draw_insets_frame_layout);
         mDrawInsetsFrameLayout.setOnInsetsCallback(new DrawInsetsFrameLayout.OnInsetsCallback() {
@@ -145,9 +152,7 @@ public class ArticleDetailFragment extends Fragment implements
 
         bindViews();
         updateStatusBar();
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getActivity().getWindow().setEnterTransition(TransitionInflater.from(getActivity()).inflateTransition(R.transition.detail_exit));
-        }
+
         return mRootView;
     }
 

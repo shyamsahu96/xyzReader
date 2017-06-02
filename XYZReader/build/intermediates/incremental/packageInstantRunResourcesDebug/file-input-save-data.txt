@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Jun 02 15:04:56 IST 2017
+#Fri Jun 02 15:44:17 IST 2017
 210.set=ANDROID_RESOURCE
 282.file=D\:\\AndroidProjects\\xyzreader\\XYZReader\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-v21\\design_bottom_navigation_item_background.xml
 14.set=ANDROID_RESOURCE

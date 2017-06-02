@@ -51,8 +51,7 @@ public class ArticleDetailActivity extends ActionBarActivity
             slide.setDuration(100).setInterpolator(AnimationUtils.loadInterpolator(this,android.R.interpolator.linear_out_slow_in));*/
             //  getWindow().setEnterTransition(TransitionInflater.from(this).inflateTransition(R.transition.detail_enter));
 
-            Transition exitTransition = TransitionInflater.from(this).inflateTransition(R.transition.detail_exit);
-            getWindow().setReturnTransition(exitTransition);
+
         }
         setContentView(R.layout.activity_article_detail);
 
