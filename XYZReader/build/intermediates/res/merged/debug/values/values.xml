@@ -474,9 +474,11 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
+    <dimen name="appbar_elevation">4dp</dimen>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
+    <dimen name="collapsing_toolbar_height">268dp</dimen>
     <dimen name="design_appbar_elevation">4dp</dimen>
     <dimen name="design_bottom_navigation_active_item_max_width">168dp</dimen>
     <dimen name="design_bottom_navigation_active_text_size">14sp</dimen>
@@ -1980,6 +1982,7 @@
 
     </style>
     <style name="Theme.Bacon.Detail" parent="Theme.Bacon">
+        <item name="android:windowEnterTransition">@transition/detail_exit</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
     <style name="Theme.Design" parent="Theme.AppCompat">

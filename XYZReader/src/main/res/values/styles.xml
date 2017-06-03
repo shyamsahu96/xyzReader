@@ -30,6 +30,7 @@
     </style>
 
     <style name="Theme.Bacon.Detail" parent="Theme.Bacon">
+        <item name="android:windowEnterTransition">@transition/detail_exit</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 

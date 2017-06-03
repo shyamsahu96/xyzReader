@@ -10,11 +10,5 @@
             <target android:targetId="@id/pager" />
         </targets>
     </explode>
-    <slide
-        android:duration="200"
-        android:slideEdge="bottom">
-        <targets>
-            <target android:targetId="@id/up_container" />
-        </targets>
-    </slide>
+
 </transitionSet>
